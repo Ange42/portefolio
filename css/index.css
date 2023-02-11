@@ -1,27 +1,25 @@
- *{
-   padding: 0px;
-   margin: 0px;
-   box-sizing: border-box; 
- }
-
-:root{
-     background-color: blueviolet;
-
-}
-
-body{
+ 
+body,html{
     font-family: 'Times New Roman', Times, serif;
     padding: 1rem 100px 0px 100px;
-}
-
-html{
     scroll-behavior: smooth;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    line-height: 1,8; 
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+
 }
+ 
 
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 a{
@@ -45,32 +43,41 @@ a{
     height:310px;
     object-fit: cover;
     border-radius: 150px;
- 
+    
+    
 }
 .partie-right{
     width: 40px;
 }
 
 .partie-left{
+    align-items: center;
     width: 310px;
     height: 310px;
 
 }
  
 header{
-    
+    flex-basis: 100;
     background-color: antiquewhite;
 }
+
 h1 ,p ,.button-AP {
-    margin: 5%;
+    width: fit-content;
+    margin: 5px;
     padding: 15px;
     border-radius: 50px;
-    background-color: white;
-    text-align: center;
-    position: relative;
-     
-    translate: center;
+    background-color: white; 
+    
+    
 }
+
+.button-AP:hover{
+  background-color: gray;
+  
+   
+}
+
 .img-container img{
     width: 310px;
     height:310px;
@@ -92,6 +99,7 @@ h1 ,p ,.button-AP {
 
 .What-I{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .w1-left{
@@ -105,9 +113,27 @@ h1 ,p ,.button-AP {
     border-radius:50px ;
 }
 .button-AP{
+     
     box-shadow:0 .5rem 1rem rgba(grey);
  
 }
+.partie-left{
+    position: relative;
+    align-items: center;
+}
 
+header{
+   flex-basis: 100%;
+}
+
+footer{
+flex-basis: 100%;
+}
+main{
+  flex-basis: 50%;
+}
+.content{
+    flex-basis: 20%;
+}
 
  
